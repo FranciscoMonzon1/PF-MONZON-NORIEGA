@@ -1,0 +1,65 @@
+.contenedor__servicios {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-image: url(../imagenes/HOMBRESON.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10PX;
+
+    .servicios {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgba(128, 128, 128, 0.377);
+        padding: 10px;
+        margin: 10px;
+
+        @media(min-width: 768px) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        &__parrafo {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            text-align: left;
+            color: white;
+            text-align: center;
+
+            @media(min-width: 768px) {
+                text-align: start;
+                padding: 10px;
+            }
+
+            h3 {
+                font-size: 2REM;
+                margin-top: 20px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .servicios__reverse {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgba(128, 128, 128, 0.377);
+        padding: 10PX;
+        margin: 10px;
+
+        @media(min-width: 768px) {
+            flex-flow: row-reverse nowrap;
+            justify-content: space-between;
+        }
+    }
+}

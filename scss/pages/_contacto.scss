@@ -1,0 +1,61 @@
+.contenedor__consultas {
+    background-image: url(../imagenes/banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px;
+}
+
+.formulario__boton {
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    background-color: #98dad996;
+    text-shadow: 2px 2px 2px black;
+    padding: 10px;
+
+}
+
+form>h2 {
+    text-align: center;
+
+}
+
+.consultas__lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.consultas__lista li a {
+    color: white;
+}
+
+@media(min-width: 768px) {
+    .contenedor__consultas {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 30px;
+    }
+
+    .consultas {
+        width: 50%;
+    }
+
+    .consultas__lista {
+        padding-top: 20px;
+    }
+}
