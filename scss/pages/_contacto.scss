@@ -1,61 +1,64 @@
 .contenedor__consultas {
-    background-image: url(../imagenes/banner.webp);
+    background-image: url(../imagenes/consultas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    color: white;
+    color: black;
     align-items: center;
     gap: 10px;
     padding: 10px;
-}
-
-.row {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-top: 10px;
-}
-
-.formulario__boton {
-    text-align: center;
-    padding: 10px;
-}
-
-form {
-    background-color: #98dad996;
-    text-shadow: 2px 2px 2px black;
-    padding: 10px;
-
-}
-
-form>h2 {
-    text-align: center;
-
-}
-
-.consultas__lista {
-    display: flex;
-    justify-content: space-around;
-}
-
-.consultas__lista li a {
-    color: white;
-}
-
-@media(min-width: 768px) {
-    .contenedor__consultas {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        padding: 30px;
+    font-weight: 500;
+    font-size: 1.15rem;
+    
+    @media(min-width: 768px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            padding: 30px;
+        }
+    .consultas{
+        @media(min-width: 768px) {
+                width: 50%;
+            }
+        .consultas__lista {
+            display: flex;
+            justify-content: space-around;
+            @media(min-width: 768px) {
+                    padding-top: 20px;
+            } 
+        }
     }
+}
+.formulario {
+    box-shadow: 4px 4px 4px black;
+    form {
+        background-color:$color-tres;
+        padding: 10px;
+        font-weight: bold;
+        .formulario__titulo {
+            text-align: center;
+        
+        }
 
-    .consultas {
-        width: 50%;
-    }
+        .fila {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-top: 10px;
+        }
 
-    .consultas__lista {
-        padding-top: 20px;
+        .formulario__boton {
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            input{
+                box-shadow: 4px 4px 4px black;
+            }
+            textarea{
+                box-shadow: 4px 4px 4px black;
+            }
+        }
     }
 }

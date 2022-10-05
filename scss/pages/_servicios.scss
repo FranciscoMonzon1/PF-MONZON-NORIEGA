@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-image: url(../imagenes/HOMBRESON.jpg);
+    background-image: url(../imagenes/servicios.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,9 +14,10 @@
         justify-content: space-around;
         align-items: center;
         border-radius: 20px;
-        background-color: rgba(128, 128, 128, 0.377);
+        background-color: rgba(128, 128, 128, 0.493);
         padding: 10px;
         margin: 10px;
+        box-shadow: 4px 4px 4px black;
 
         @media(min-width: 768px) {
             flex-flow: row nowrap;
@@ -56,6 +57,7 @@
         background-color: rgba(128, 128, 128, 0.377);
         padding: 10PX;
         margin: 10px;
+        box-shadow: 4px 4px 4px black;
 
         @media(min-width: 768px) {
             flex-flow: row-reverse nowrap;

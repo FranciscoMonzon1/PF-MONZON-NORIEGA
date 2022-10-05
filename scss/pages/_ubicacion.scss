@@ -2,17 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url(../imagenes/banner\ 2.jpeg);
+    background-image: url(../imagenes/ubicacion.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
     gap: 10px;
 
+
     .ubicacion {
+        box-shadow: 5px 5px 5px $color-uno;
         .ubicacion__titulo {
             text-align: center;
-            background-color: #5b8291;
+            background-color: $color-tres;
         }
     }
 }

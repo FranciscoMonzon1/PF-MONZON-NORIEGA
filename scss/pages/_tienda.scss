@@ -1,8 +1,8 @@
 .titulo {
     text-align: center;
     padding: 10px;
-    background: linear-gradient(to bottom, #eaebed, #98dad9, #5b8291);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.589);
+    background: linear-gradient(to bottom, $color-dos, $color-tres);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.589);
 }
 
 .Contenedor__tarjeta {
@@ -12,7 +12,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #5b8291;
+    background-color:$color-tres;
+    
 
     @media(min-width: 768px) {
         display: flex;
@@ -34,6 +35,7 @@
     }
 
     .Tarjeta__princ {
+        box-shadow: 4px 4px 4px black;
         grid-area: princ;
         @media(min-width:1200px){
             font-size: 1.5rem;
@@ -41,10 +43,12 @@
     }
 
     .Tarjeta__inter {
+        box-shadow: 4px 4px 4px black;
         grid-area: inter;
     }
 
     .Tarjeta__dif {
+        box-shadow: 4px 4px 4px black;
         grid-area: dif;
     }
 
@@ -99,7 +103,7 @@
     .Tarjeta__boton:hover {
         color: black;
         border: 3px solid black;
-        background-color: #5b8291;
+        background-color: $color-tres;
         transition-property: all;
         transition-duration: 500ms;
 

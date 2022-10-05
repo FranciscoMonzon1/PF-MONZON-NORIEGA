@@ -1,14 +1,20 @@
 /* Footer */
 footer {
-    background: linear-gradient(to top, #2e424d, #5b8291);
+    background: linear-gradient(to bottom, $color-tres, $color-cuatro );
    border-top: 1px solid rgba(0, 0, 0, 0.616);
+   text
  h3{
     text-align: center;
     padding: 10px;
+   }
+   div{
+      a{
+         text-decoration: none;
+      }
    }
    ul{
     display: flex;
     justify-content: center;
     gap: 10px;
+    }
    }
-}
