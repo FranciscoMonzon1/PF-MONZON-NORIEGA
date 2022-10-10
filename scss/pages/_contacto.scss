@@ -9,8 +9,10 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    font-weight: 500;
-    font-size: 1.15rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+
     
     @media(min-width: 768px) {
             display: flex;
@@ -33,6 +35,9 @@
 }
 .formulario {
     box-shadow: 4px 4px 4px black;
+    @media (max-width: 768px){
+        width: 100%;
+    }
     form {
         background-color:$color-tres;
         padding: 10px;

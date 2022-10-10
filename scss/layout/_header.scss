@@ -12,8 +12,8 @@
 }
 
 .navegante{
-    background: linear-gradient(to bottom, $color-uno , $color-dos ); 
-    border-top: 2px solid black;
+  position: relative;
+  background: linear-gradient(to bottom, $color-uno , $color-dos ); 
     ul li a{
         font-weight: bold;
     }

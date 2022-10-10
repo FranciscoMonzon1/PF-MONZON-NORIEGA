@@ -16,5 +16,10 @@
             text-align: center;
             background-color: $color-tres;
         }
+        .ubicacion__mapa{
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
     }
 }

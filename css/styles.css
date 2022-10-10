@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -29,8 +29,8 @@ a {
 }
 
 .navegante {
+  position: relative;
   background: linear-gradient(to bottom, #41436a, #974063);
-  border-top: 2px solid black;
 }
 .navegante ul li a {
   font-weight: bold;
@@ -208,7 +208,7 @@ footer ul {
   text-align: center;
   padding: 10px;
   background: linear-gradient(to bottom, #974063, #f54768);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.589);
+  margin: 0%;
 }
 
 .Contenedor__tarjeta {
@@ -256,6 +256,7 @@ footer ul {
   grid-area: dif;
 }
 .Contenedor__tarjeta .Tarjeta {
+  background-color: rgba(255, 255, 255, 0.432);
   display: flex;
   flex-flow: column nowrap;
   padding: 10px;
@@ -304,7 +305,7 @@ footer ul {
 .Contenedor__tarjeta .Tarjeta__boton:hover {
   color: black;
   border: 3px solid black;
-  background-color: #f54768;
+  background-color: rgba(255, 255, 255, 0.432);
   transition-property: all;
   transition-duration: 500ms;
 }
@@ -335,6 +336,11 @@ footer ul {
   text-align: center;
   background-color: #f54768;
 }
+@media (max-width: 768px) {
+  .contenedor__ubicacion .ubicacion .ubicacion__mapa {
+    width: 100%;
+  }
+}
 
 .contenedor__servicios {
   display: flex;
@@ -346,9 +352,17 @@ footer ul {
   background-size: cover;
   gap: 10PX;
 }
+@media (min-width: 1200px) {
+  .contenedor__servicios {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "musc musc fun" "musc musc fun" "ga ga fun" "ga ga yog" "zumb zumb yog" "zumb zumb yog";
+  }
+}
 .contenedor__servicios .servicios {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
@@ -363,13 +377,17 @@ footer ul {
     justify-content: space-between;
   }
 }
+.contenedor__servicios .servicios .Servicios__img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px gray;
+}
 .contenedor__servicios .servicios__parrafo {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   text-align: left;
   color: white;
-  text-align: center;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .contenedor__servicios .servicios__parrafo {
@@ -380,25 +398,36 @@ footer ul {
 .contenedor__servicios .servicios__parrafo h3 {
   font-size: 2REM;
   margin-top: 20px;
+  text-align: center;
 }
 .contenedor__servicios .servicios__parrafo ul {
   margin-bottom: 10px;
+  list-style: circle;
+  text-align: justify;
 }
-.contenedor__servicios .servicios__reverse {
-  display: flex;
-  flex-flow: row-reverse nowrap;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 20px;
-  background-color: rgba(128, 128, 128, 0.377);
-  padding: 10PX;
-  margin: 10px;
-  box-shadow: 4px 4px 4px black;
+.contenedor__servicios .musc {
+  grid-area: musc;
 }
-@media (min-width: 768px) {
-  .contenedor__servicios .servicios__reverse {
-    flex-flow: row-reverse nowrap;
-    justify-content: space-between;
+.contenedor__servicios .gap {
+  grid-area: ga;
+}
+.contenedor__servicios .fun {
+  grid-area: fun;
+}
+@media (min-width: 1200px) {
+  .contenedor__servicios .fun {
+    flex-flow: column nowrap;
+  }
+}
+.contenedor__servicios .zumb {
+  grid-area: zumb;
+}
+.contenedor__servicios .yog {
+  grid-area: yog;
+}
+@media (min-width: 1200px) {
+  .contenedor__servicios .yog {
+    flex-flow: column nowrap;
   }
 }
 
@@ -413,8 +442,9 @@ footer ul {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  font-weight: 500;
-  font-size: 1.15rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .contenedor__consultas {
@@ -441,6 +471,11 @@ footer ul {
 
 .formulario {
   box-shadow: 4px 4px 4px black;
+}
+@media (max-width: 768px) {
+  .formulario {
+    width: 100%;
+  }
 }
 .formulario form {
   background-color: #f54768;

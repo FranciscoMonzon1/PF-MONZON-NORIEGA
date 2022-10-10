@@ -8,9 +8,22 @@
     background-size: cover;
     gap: 10PX;
 
+    @media(min-width:1200px) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "musc musc fun"
+            "musc musc fun"
+            "ga ga fun"
+            "ga ga yog"
+            "zumb zumb yog"
+            "zumb zumb yog";
+    }
+
     .servicios {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
         border-radius: 20px;
@@ -24,13 +37,18 @@
             justify-content: space-between;
         }
 
+        .Servicios__img {
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px gray;
+        }
+
         &__parrafo {
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-around;
             text-align: left;
             color: white;
-            text-align: center;
+            text-align: justify;
 
             @media(min-width: 768px) {
                 text-align: start;
@@ -40,28 +58,42 @@
             h3 {
                 font-size: 2REM;
                 margin-top: 20px;
+                text-align: center;
             }
 
             ul {
                 margin-bottom: 10px;
+                list-style: circle;
+                text-align: justify;
             }
         }
     }
 
-    .servicios__reverse {
-        display: flex;
-        flex-flow: row-reverse nowrap;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 20px;
-        background-color: rgba(128, 128, 128, 0.377);
-        padding: 10PX;
-        margin: 10px;
-        box-shadow: 4px 4px 4px black;
+    .musc {
+        grid-area: musc;
+    }
 
-        @media(min-width: 768px) {
-            flex-flow: row-reverse nowrap;
-            justify-content: space-between;
+    .gap {
+        grid-area: ga;
+    }
+
+    .fun {
+        grid-area: fun;
+
+        @media(min-width:1200px) {
+            flex-flow: column nowrap;
+        }
+    }
+
+    .zumb {
+        grid-area: zumb;
+    }
+
+    .yog {
+        grid-area: yog;
+
+        @media(min-width:1200px) {
+            flex-flow: column nowrap;
         }
     }
 }
