@@ -24,7 +24,7 @@
         @media(min-width: 768px) {
                 width: 50%;
             }
-        .consultas__lista {
+        &__lista {
             display: flex;
             justify-content: space-around;
             @media(min-width: 768px) {
