@@ -1,20 +1,29 @@
 /* Footer */
 footer {
-    background: linear-gradient(to bottom, $color-tres, $color-cuatro );
+   background: url(../imagenes/footer.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    border-top: 1px solid rgba(0, 0, 0, 0.616);
-   text
- h3{
-    text-align: center;
-    padding: 10px;
+
+   h3 {
+      text-align: center;
+      padding: 10px;
+      color: white;
    }
-   div{
-      a{
-         text-decoration: none;
+
+   div {
+      a {
+         i{
+            color: #974063;
+
+         }
       }
    }
-   ul{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    }
+
+   ul {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
    }
+}

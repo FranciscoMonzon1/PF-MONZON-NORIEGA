@@ -1,5 +1,5 @@
 .contenedor__consultas {
-    background-image: url(../imagenes/consultas.jpg);
+    background: url(../imagenes/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +27,11 @@
         &__lista {
             display: flex;
             justify-content: space-around;
+            a{
+                i{
+                    color: #974063;
+                }
+            }
             @media(min-width: 768px) {
                     padding-top: 20px;
             } 
@@ -39,9 +44,10 @@
         width: 100%;
     }
     form {
-        background-color:$color-tres;
+        background-color:#974063;
         padding: 10px;
         font-weight: bold;
+        border-radius: 15px;
         .formulario__titulo {
             text-align: center;
         

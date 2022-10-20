@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url(../imagenes/ubicacion.jpg);
+    background: url(../imagenes/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,12 +11,15 @@
 
 
     .ubicacion {
-        box-shadow: 5px 5px 5px $color-uno;
+        box-shadow: 5px 5px 5px gray;
+
         &__titulo {
             text-align: center;
-            background-color: $color-tres;
+            background-color: #974063;
+            color: black;
         }
-        &__mapa{
+
+        &__mapa {
             @media (max-width: 768px) {
                 width: 100%;
             }
