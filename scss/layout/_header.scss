@@ -5,7 +5,11 @@
 }
 .navegacion ul li a{
   color: #974063;
-  font-weight: bold;
+  font-family:'Roboto Slab', serif;
+  &:hover{
+    color: white;
+    border-bottom: 2px solid #974063;
+  }
 }
 .navbar-toggler{
   background-color: white;

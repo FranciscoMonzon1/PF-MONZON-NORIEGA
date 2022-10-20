@@ -25,7 +25,11 @@ a {
 
 .navegacion ul li a {
   color: #974063;
-  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+.navegacion ul li a:hover {
+  color: white;
+  border-bottom: 2px solid #974063;
 }
 
 .navbar-toggler {
@@ -59,9 +63,15 @@ footer h3 {
   text-align: center;
   padding: 10px;
   color: white;
+  font-family: "Lobster", cursive;
 }
 footer div a i {
   color: #974063;
+  transition-property: all;
+  transition-duration: 2s;
+}
+footer div a i:hover {
+  transform: scale(1.4);
 }
 footer ul {
   display: flex;
@@ -109,18 +119,19 @@ footer ul {
 }
 .banner .titulo__banner {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 @media (min-width: 768px) {
   .banner .titulo__banner {
     margin-top: 0;
-    transform: translate(0px, 140px);
+    transform: translate(0px, 200px);
     text-align: start;
   }
 }
 .banner .titulo__banner h2 {
   font-size: 2.5rem;
   padding: 10px 0px;
+  font-family: "Bebas Neue", cursive;
 }
 @media (min-width: 768px) {
   .banner .titulo__banner h2 {
@@ -142,6 +153,7 @@ footer ul {
   background-color: #974063;
   color: black;
   font-weight: bold;
+  font-family: "Roboto Slab", serif;
 }
 @media (min-width: 768px) {
   .banner .titulo__banner a {
@@ -184,14 +196,29 @@ footer ul {
   text-align: center;
 }
 .fila__inicio .texto__inicio h2 {
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.8rem;
 }
 .fila__inicio .texto__inicio a {
   background-color: #974063;
   border: 2px solid black;
   color: black;
-  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+}
+.fila__inicio .texto__inicio a:hover {
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
+}
+.fila__inicio .texto__inicio .btndos {
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
+}
+.fila__inicio .texto__inicio .btndos:hover {
+  background-color: #974063;
+  color: black;
+  border: 2px solid black;
 }
 
 .titulo {
@@ -200,6 +227,7 @@ footer ul {
   background-color: #974063;
   margin: 0%;
   color: black;
+  font-family: "Bebas Neue", cursive;
 }
 
 .Contenedor__tarjeta {
@@ -276,9 +304,10 @@ footer ul {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  color: black;
+  color: white;
   font-weight: bold;
   text-shadow: 8px 8px 8px gray;
+  font-family: "Bebas Neue", cursive;
 }
 @media (min-width: 768px) {
   .Contenedor__tarjeta .Tarjeta .Tarjeta__titulo {

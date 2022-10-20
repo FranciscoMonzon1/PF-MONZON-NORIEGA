@@ -4,6 +4,7 @@
     background-color: #974063;
     margin: 0%;
     color: black;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .Contenedor__tarjeta {
@@ -81,9 +82,10 @@
             background-repeat: no-repeat;
             background-size: contain;
             text-align: center;
-            color: black;
+            color: white;
             font-weight: bold;
             text-shadow:  8px 8px 8px gray;
+            font-family: 'Bebas Neue', cursive;
 
             @media(min-width: 768px) {
                 background-size: contain;

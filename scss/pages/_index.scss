@@ -16,17 +16,18 @@
 
   .titulo__banner {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 90px;
 
     @media(min-width: 768px) {
       margin-top: 0;
-      transform: translate(0px, 140px);
+      transform: translate(0px, 200px);
       text-align: start;
     }
 
     h2 {
       font-size: 2.5rem;
       padding: 10px 0px;
+      font-family: 'Bebas Neue', cursive;
 
       @media(min-width: 768px) {
         font-size: 3.5rem;
@@ -48,6 +49,7 @@
       background-color: #974063;
       color: black;
       font-weight: bold;
+      font-family: 'Roboto Slab', serif;
 
       @media(min-width: 768px) {
         background-color: #974063;
@@ -94,15 +96,32 @@
     text-align: center;
 
     h2 {
-      font-weight: bold;
-      font-size: 2.5rem;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.8rem;
     }
 
     a {
       background-color: #974063;
       border: 2px solid black;
       color: black;
-      font-weight: 600;
+      font-family: 'Roboto Slab', serif;
+      &:hover{
+        background-color: black;
+        color: #974063;
+        border: 2px solid #974063;
+        
+      }
+
+    }
+    .btndos{
+      background-color: black;
+      color:  #974063; ;
+      border: 2px solid #974063;
+      &:hover{
+        background-color: #974063;
+        color: black;
+        border: 2px solid black;
+      }
     }
   }
 
