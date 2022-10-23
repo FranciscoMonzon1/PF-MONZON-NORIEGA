@@ -40,6 +40,8 @@
         .Servicios__img {
             border-radius: 10px;
             box-shadow: 2px 2px 2px gray;
+            height: 250px;
+            width: 250px;
         }
 
         &__parrafo {
@@ -59,6 +61,7 @@
                 font-size: 2REM;
                 margin-top: 20px;
                 text-align: center;
+                font-family: 'Bebas Neue', cursive;
             }
 
             ul {
@@ -80,8 +83,9 @@
     .fun {
         grid-area: fun;
 
-        @media(min-width:1200px) {
+        @media(min-width:1024px) {
             flex-flow: column nowrap;
+            font-size: 22px;
         }
     }
 
@@ -92,8 +96,9 @@
     .yog {
         grid-area: yog;
 
-        @media(min-width:1200px) {
+        @media(min-width:1024px) {
             flex-flow: column nowrap;
+            font-size: 22px;
         }
     }
 }

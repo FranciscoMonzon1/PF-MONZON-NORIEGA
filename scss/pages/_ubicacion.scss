@@ -1,13 +1,59 @@
 .contenedor__ubicacion {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: column;
     background: url(../imagenes/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
-    gap: 10px;
+
+    .horarios{
+        text-align: center;
+        .neon{
+            display: inline-block;
+            margin: 10px;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            bottom: 30px;
+            right: 30px;
+            color: #974063;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 1px 10px  #974063;
+        }
+        
+        .neon:hover{
+            text-decoration: none;
+            color: white;
+            background: #974063;
+        }
+        h2{
+            font-family: 'Bebas Neue', cursive ;
+        }
+        ul{
+            @media(min-width: 768px) {
+                display: flex;
+                justify-content: space-around;
+            }
+            span{
+                font-size: 20px;
+                font-family: 'Roboto Slab', serif ;
+            }
+            li{
+                list-style:circle;
+            }
+        }
+    }
+    
+
+    .contenedor_preubicacion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 10px;
+    }
 
 
     .ubicacion {
@@ -17,6 +63,7 @@
             text-align: center;
             background-color: #974063;
             color: black;
+            font-family: 'Bebas Neue', cursive;
         }
 
         &__mapa {
@@ -26,3 +73,4 @@
         }
     }
 }
+

@@ -59,21 +59,21 @@ footer {
   background-size: cover;
   border-top: 1px solid rgba(0, 0, 0, 0.616);
 }
-footer h3 {
+footer div h3 {
   text-align: center;
   padding: 10px;
   color: white;
   font-family: "Lobster", cursive;
 }
-footer div a i {
+footer div div a i {
   color: #974063;
-  transition-property: all;
-  transition-duration: 2s;
+  transition: all 0.3s;
 }
-footer div a i:hover {
-  transform: scale(1.4);
+footer div div a i:hover {
+  font-size: 30px;
+  text-shadow: 2px 2px 5px white;
 }
-footer ul {
+footer div ul {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -124,7 +124,7 @@ footer ul {
 @media (min-width: 768px) {
   .banner .titulo__banner {
     margin-top: 0;
-    transform: translate(0px, 200px);
+    transform: translate(0px, 180px);
     text-align: start;
   }
 }
@@ -345,12 +345,54 @@ footer ul {
 
 .contenedor__ubicacion {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: column;
   background: url(../imagenes/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.contenedor__ubicacion .horarios {
+  text-align: center;
+}
+.contenedor__ubicacion .horarios .neon {
+  display: inline-block;
+  margin: 10px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  color: #974063;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px #974063;
+}
+.contenedor__ubicacion .horarios .neon:hover {
+  text-decoration: none;
+  color: white;
+  background: #974063;
+}
+.contenedor__ubicacion .horarios h2 {
+  font-family: "Bebas Neue", cursive;
+}
+@media (min-width: 768px) {
+  .contenedor__ubicacion .horarios ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.contenedor__ubicacion .horarios ul span {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+.contenedor__ubicacion .horarios ul li {
+  list-style: circle;
+}
+.contenedor__ubicacion .contenedor_preubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 10px;
   gap: 10px;
 }
@@ -361,6 +403,7 @@ footer ul {
   text-align: center;
   background-color: #974063;
   color: black;
+  font-family: "Bebas Neue", cursive;
 }
 @media (max-width: 768px) {
   .contenedor__ubicacion .ubicacion__mapa {
@@ -406,6 +449,8 @@ footer ul {
 .contenedor__servicios .servicios .Servicios__img {
   border-radius: 10px;
   box-shadow: 2px 2px 2px gray;
+  height: 250px;
+  width: 250px;
 }
 .contenedor__servicios .servicios__parrafo {
   display: flex;
@@ -425,6 +470,7 @@ footer ul {
   font-size: 2REM;
   margin-top: 20px;
   text-align: center;
+  font-family: "Bebas Neue", cursive;
 }
 .contenedor__servicios .servicios__parrafo ul {
   margin-bottom: 10px;
@@ -440,9 +486,10 @@ footer ul {
 .contenedor__servicios .fun {
   grid-area: fun;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .contenedor__servicios .fun {
     flex-flow: column nowrap;
+    font-size: 22px;
   }
 }
 .contenedor__servicios .zumb {
@@ -451,9 +498,10 @@ footer ul {
 .contenedor__servicios .yog {
   grid-area: yog;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .contenedor__servicios .yog {
     flex-flow: column nowrap;
+    font-size: 22px;
   }
 }
 
@@ -468,7 +516,6 @@ footer ul {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -479,6 +526,9 @@ footer ul {
     justify-content: space-around;
     padding: 30px;
   }
+}
+.contenedor__consultas .consultas {
+  font-family: "Bebas Neue", cursive;
 }
 @media (min-width: 768px) {
   .contenedor__consultas .consultas {
@@ -491,6 +541,11 @@ footer ul {
 }
 .contenedor__consultas .consultas__lista a i {
   color: #974063;
+  transition: all 0.3s;
+}
+.contenedor__consultas .consultas__lista a i:hover {
+  font-size: 30px;
+  text-shadow: 2px 2px 5px black;
 }
 @media (min-width: 768px) {
   .contenedor__consultas .consultas__lista {
@@ -509,7 +564,7 @@ footer ul {
 .formulario form {
   background-color: #974063;
   padding: 10px;
-  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
   border-radius: 15px;
 }
 .formulario form .formulario__titulo {
@@ -520,9 +575,26 @@ footer ul {
   flex-flow: column nowrap;
   margin-top: 10px;
 }
+.formulario form .fila label {
+  font-family: "Roboto Slab", serif;
+}
 .formulario form .formulario__boton {
   text-align: center;
   padding: 10px;
+}
+.formulario form .formulario__boton input {
+  border: 2px solid black;
+  border-radius: 15%;
+  box-shadow: 0 0 0 black;
+  background-color: #974063;
+  transition: all 1s;
+  font-family: "Roboto Slab", serif;
+  color: black;
+}
+.formulario form .formulario__boton input:hover {
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
 }
 .formulario form div input {
   box-shadow: 4px 4px 4px black;

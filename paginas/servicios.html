@@ -16,6 +16,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@500&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description"
         content="Lo más importante es la salud, por eso contamos con una amplia variedad de servicios, elegí el que mas te guste!">
     <title>Servicios y entrenamiento - Central</title>
@@ -55,11 +56,11 @@
         <a class="btn-wsp" href="https://www.whatsapp.com/?lang=es">
             <i class="bi bi-whatsapp"></i>
         </a>
-        <h2 class="titulo">Nuestros servicios</h2>
+        <h2 class="titulo" data-aos="zoom-in">Nuestros servicios</h2>
         <div class="contenedor__servicios">
-            <div class="servicios musc">
+            <div class="servicios musc"  data-aos="flip-left">
                 <div>
-                    <img class="Servicios__img" src="../imagenes/GYM-01.jpg" alt="referencia a la musculacion">
+                    <img class="Servicios__img" src="../imagenes/musculacion.jpg" alt="referencia a la musculacion">
                 </div>
                 <div class="servicios__parrafo">
                     <h3>Musculacion</h3>
@@ -75,9 +76,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="servicios fun">
+            <div class="servicios fun"  data-aos="flip-left">
                 <div>
-                    <img class="Servicios__img" src="../imagenes/GYM-01.jpg" alt="referencia a funcional">
+                    <img class="Servicios__img" src="../imagenes/funcional.jpg" alt="referencia a funcional">
                 </div>
                 <div class="servicios__parrafo">
                     <h3>Funcional</h3>
@@ -92,9 +93,9 @@
 
                 </div>
             </div>
-            <div class="servicios gap">
+            <div class="servicios gap"  data-aos="flip-left">
                 <div>
-                    <img class="Servicios__img" src="../imagenes/GYM-01.jpg" alt="referencia a GAP">
+                    <img class="Servicios__img" src="../imagenes/gap.jpg" alt="referencia a GAP">
                 </div>
                 <div class="servicios__parrafo">
                     <h3>GAP</h3>
@@ -104,14 +105,14 @@
                     <h3>Beneficios</h3>
                     <ul>
                         <li>Corregir desviaciones de la columna y mejorar la postura corporal.</li>
-                        <li>Liberar la tensión acumulada por el estrés.Lorem, ipsum dolor.</li>
+                        <li>Liberar la tensión acumulada por el estrés</li>
                         <li>Bajar de peso.</li>
                     </ul>
                 </div>
             </div>
-            <div class="servicios zumb">
+            <div class="servicios zumb"  data-aos="flip-left">
                 <div>
-                    <img class="Servicios__img" src="../imagenes/GYM-01.jpg" alt="referencia a Zumba">
+                    <img class="Servicios__img" src="../imagenes/zumba.jpg" alt="referencia a Zumba">
                 </div>
                 <div class="servicios__parrafo">
                     <h3>Zumba</h3>
@@ -126,9 +127,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="servicios yog">
+            <div class="servicios yog"  data-aos="flip-left">
                 <div>
-                    <img class="Servicios__img" src="../imagenes/GYM-01.jpg" alt="referencia a Yoga">
+                    <img class="Servicios__img" src="../imagenes/yoga.jpg" alt="referencia a Yoga">
                 </div>
                 <div class="servicios__parrafo">
                     <h3>Yoga</h3>
@@ -143,6 +144,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="nada"></div>
         </div>
     </main>
     <footer>
@@ -158,6 +160,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>
