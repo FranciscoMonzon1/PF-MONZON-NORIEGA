@@ -1,3 +1,4 @@
+//COMIENZO DE CONTENIDO
 .contenedor__consultas {
     background: url(../imagenes/background.jpg);
     background-position: center;
@@ -9,91 +10,100 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    font-size: 1.5rem;
-    text-align: center;
 
-    
-    @media(min-width: 768px) {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            padding: 30px;
+    @media(min-width: 900px) {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .consultas {
+        &__parrafo {
+            font-size: 1.5rem;
+            text-align: center;
         }
-    .consultas{
-        font-family: 'Bebas Neue', cursive ;
-        @media(min-width: 768px) {
-                width: 50%;
-            }
+        @media(min-width: 900px) {
+           width: 55%;
+        }
+
+
         &__lista {
             display: flex;
             justify-content: space-around;
-            a{
-                i{
-                    color: #974063;
+
+            a {
+                i {
+                    font-size: 1.8rem;
+                    color: $color-uno;
                     transition: all 0.3s;
 
                     &:hover {
-                       font-size: 30px;
-                       text-shadow: 2px 2px 5px black
+                        font-size: 30px;
+                        text-shadow: 2px 2px 5px black
                     }
                 }
             }
-            @media(min-width: 768px) {
-                    padding-top: 20px;
-            } 
         }
     }
-}
-.formulario {
-    box-shadow: 4px 4px 4px black;
-    @media (max-width: 768px){
-        width: 100%;
-    }
-    form {
-        background-color:#974063;
+
+    .formulario {
+        box-shadow: 4px 4px 4px black;
+        font-size: 1.4rem;
+        text-align: center;
+        width: 80%;
+        background-color: $color-uno;
         padding: 10px;
-        font-family: 'Bebas Neue', cursive ;
         border-radius: 15px;
-        .formulario__titulo {
+        @media(min-width: 900px) {
+            width: 45%;
+         }
+
+        &__titulo {
             text-align: center;
-        
+            font-family: 'Bebas Neue', cursive;
         }
 
         .fila {
             display: flex;
             flex-flow: column nowrap;
             margin-top: 10px;
-            label{
+
+            label {
                 font-family: 'Roboto Slab', serif;
             }
         }
 
-        .formulario__boton {
+        &__boton {
             text-align: center;
             padding: 10px;
-            input{
+
+            input {
+                background-color: $color-uno;
                 border: 2px solid black;
-                border-radius: 15%;
-                box-shadow: 0 0 0 black;
-                background-color: #974063;
-                transition: all 1s;
-                font-family: 'Roboto Slab', serif;
                 color: black;
-                &:hover{
+                font-family: 'Roboto Slab', serif;
+
+                &:hover {
                     background-color: black;
-                    color: #974063;
-                    border: 2px solid #974063;
+                    color: $color-uno;
+                    border: 2px solid $color-uno;
+
                 }
             }
 
         }
-        div{
-            input{
+
+        div {
+            input {
                 box-shadow: 4px 4px 4px black;
+                border-radius: 8px;
             }
-            textarea{
+
+            textarea {
                 box-shadow: 4px 4px 4px black;
+                border-radius: 8px;
             }
         }
+
     }
 }

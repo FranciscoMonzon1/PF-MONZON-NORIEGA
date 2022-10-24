@@ -1,12 +1,14 @@
+//TITULO PARA TODAS LAS PAGINAS MIX
 .titulo {
     text-align: center;
     padding: 10px;
-    background-color: #974063;
-    margin: 0%;
+    background-color: $color-uno;
+    margin: 0;
     color: black;
     font-family: 'Bebas Neue', cursive;
 }
 
+//COMIENZO DE PAGINA
 .Contenedor__tarjeta {
     display: flex;
     flex-flow: column nowrap;
@@ -14,11 +16,11 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-     background: url(../imagenes/background.jpg);
+    background: url(../imagenes/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 
     @media(min-width: 768px) {
         display: flex;
@@ -30,52 +32,46 @@
 
     }
 
+    //GRID
     @media(min-width:1200px) {
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
-            "princ inter inter"
-            "princ dif dif";
+            "inter inter princ"
+            "dif dif princ";
     }
 
     .Tarjeta__princ {
-        box-shadow: 4px 4px 4px black;
         grid-area: princ;
-        @media(min-width:1200px){
+
+        @media(min-width:1200px) {
             font-size: 1.5rem;
         }
     }
 
     .Tarjeta__inter {
-        box-shadow: 4px 4px 4px black;
         grid-area: inter;
     }
 
     .Tarjeta__dif {
-        box-shadow: 4px 4px 4px black;
         grid-area: dif;
     }
 
+    //TARJETAS DE LA TIENDA
     .Tarjeta {
-        background-color: rgba(128, 128, 128, 0.61) ;
         display: flex;
         flex-flow: column nowrap;
-        padding: 10px;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        border: 3px solid black;
-        border-radius: 10px;
-        text-align: justify;
-        gap: 10px;
-        @media(min-width:1200px){
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-around; 
-        }
+        border-radius: 20px;
+        background-color: $color-tarjeta;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 4px 4px 4px black;
 
         .Tarjeta__titulo {
-            height: 50vh;
+            height: 40vh;
             width: 100%;
             background-image: url(../imagenes/GYM-01.jpg);
             background-position: center;
@@ -83,13 +79,8 @@
             background-size: contain;
             text-align: center;
             color: white;
-            font-weight: bold;
-            text-shadow:  8px 8px 8px gray;
+            text-shadow: 8px 8px 8px black;
             font-family: 'Bebas Neue', cursive;
-
-            @media(min-width: 768px) {
-                background-size: contain;
-            }
         }
 
         .Tarjeta__titulo--intermedio {
@@ -99,29 +90,29 @@
         .Tarjeta__titulo--dificil {
             background-image: url(../imagenes/GYM-03.jpg);
         }
-    }
 
-    .Tarjeta__boton {
-        background-color: black;
-        color: white;
-        padding: 5px;
-        border: 3px solid black;
-        border-radius: 10%;
-    }
-
-    .Tarjeta__boton:hover {
-        color: black;
-        border: 3px solid black;
-        background-color: rgba(255, 255, 255, 0.432);
-        transition-property: all;
-        transition-duration: 500ms;
-
-    }
-
-    .Tarjeta__parrafo {
-        height: 60%;
-        @media(min-width:1200px){
-            height: auto;
+        .Tarjeta__parrafo {
+            height: 60%;
+            text-align: center;
+    
+            @media(min-width:1200px) {
+                height: auto;
+            }
         }
+
+        .Tarjeta__boton {
+            background-color: $color-uno;
+            border: 2px solid black;
+            color: black;
+            font-family: 'Roboto Slab', serif;
+    
+            &:hover {
+                background-color: black;
+                color: $color-uno;
+                border: 2px solid $color-uno;
+    
+            }
+        }
+    
     }
 }

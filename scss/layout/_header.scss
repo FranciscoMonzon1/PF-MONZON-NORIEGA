@@ -1,31 +1,21 @@
-/* Header */
-.navegar{
-  background-color:  rgb(0, 0, 0);
+//HEADER DE LA PAGINA DE INICIO
+.navegar {
+  background-color: rgb(0, 0, 0);
   width: 100%;
-}
-.navegacion ul li a{
-  color: #974063;
-  font-family:'Roboto Slab', serif;
-  &:hover{
-    color: white;
-    border-bottom: 2px solid #974063;
-  }
-}
-.navbar-toggler{
-  background-color: white;
-}
 
-.navegante{
-  position: relative;
-  background-color: black; 
-    ul li a{
-        font-weight: bold;
-    }
-}
-@media(min-width: 768px) {
-.navegar{
+  @media(min-width: 768px) {
     position: absolute;
-    background-color:  rgba(0, 0, 0, 0.205);
+    background-color: rgba(0, 0, 0, 0.205);
     width: 100%;
   }
-  }
+}
+//ICONO DEL NAV
+.navresponsive{
+  background-color: white;
+  border: 3px solid $color-uno;  
+}
+//HEADER DE TODAS LAS PAGINAS 
+.navegante {
+  position: relative;
+  background-color: black;
+}

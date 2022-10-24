@@ -1,3 +1,4 @@
+//COMIENZO DE CONTENIDO
 .contenedor__servicios {
     display: flex;
     flex-flow: column nowrap;
@@ -7,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     gap: 10PX;
-
+ //GRID
     @media(min-width:1200px) {
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -27,7 +28,7 @@
         justify-content: space-around;
         align-items: center;
         border-radius: 20px;
-        background-color: rgba(128, 128, 128, 0.377) ;
+        background-color: $color-tarjeta ;
         padding: 10px;
         margin: 10px;
         box-shadow: 4px 4px 4px black;
@@ -37,9 +38,9 @@
             justify-content: space-between;
         }
 
-        .Servicios__img {
+        &__img {
             border-radius: 10px;
-            box-shadow: 2px 2px 2px gray;
+            box-shadow: 2px 2px 2px black;
             height: 250px;
             width: 250px;
         }
@@ -56,6 +57,12 @@
                 text-align: start;
                 padding: 10px;
             }
+            h2{
+                font-size: 2REM;
+                margin-top: 20px;
+                text-align: center;
+                font-family: 'Bebas Neue', cursive; 
+            }
 
             h3 {
                 font-size: 2REM;
@@ -71,7 +78,7 @@
             }
         }
     }
-
+ //GRID AREA
     .musc {
         grid-area: musc;
     }
