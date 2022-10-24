@@ -1,3 +1,4 @@
+/* PAGINA DE TIENDA */
 //TITULO PARA TODAS LAS PAGINAS MIX
 .titulo {
     text-align: center;
@@ -7,7 +8,7 @@
     color: black;
     font-family: 'Bebas Neue', cursive;
 }
-
+/* CONTENIDO TIENDA */
 //COMIENZO DE PAGINA
 .Contenedor__tarjeta {
     display: flex;
@@ -57,7 +58,7 @@
     .Tarjeta__dif {
         grid-area: dif;
     }
-
+/* TARJETAS TIENDA */
     //TARJETAS DE LA TIENDA
     .Tarjeta {
         display: flex;
@@ -116,3 +117,4 @@
     
     }
 }
+/* FIN PAGINA TEINDA */

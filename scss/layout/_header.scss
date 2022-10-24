@@ -1,3 +1,4 @@
+/* HEADER DE LA PAGINA DE INICO */
 //HEADER DE LA PAGINA DE INICIO
 .navegar {
   background-color: rgb(0, 0, 0);
@@ -9,11 +10,13 @@
     width: 100%;
   }
 }
+/* ICONO DEL NAV */
 //ICONO DEL NAV
 .navresponsive{
   background-color: white;
   border: 3px solid $color-uno;  
 }
+/* HEADER DE TODAS LAS PAGINAS */
 //HEADER DE TODAS LAS PAGINAS 
 .navegante {
   position: relative;
