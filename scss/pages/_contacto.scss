@@ -1,113 +1,163 @@
 /* COMIENZO DE CONSULTAS */
 //COMIENZO DE CONTENIDO
-.contenedor__consultas {
+.contenedorgeneral {
     background: url(../imagenes/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    color: black;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
 
-    @media(min-width: 900px) {
+    .contenedor__consultas {
+        background: url(../imagenes/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-    }
-    /* SOBRE NOSOTROS | CONSULTAS */
- //SOBRE NOSOTROS
-    .consultas {
-        &__parrafo {
-            font-size: 1.5rem;
-            text-align: center;
-        }
+        flex-flow: column nowrap;
+        color: black;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
         @media(min-width: 900px) {
-           width: 55%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
         }
 
+        /* SOBRE NOSOTROS | CONSULTAS */
+        //SOBRE NOSOTROS
+        .consultas {
+            &__parrafo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
 
-        &__lista {
-            display: flex;
-            justify-content: space-around;
+            @media(min-width: 900px) {
+                width: 55%;
+            }
 
-            a {
-                i {
-                    font-size: 1.8rem;
-                    color: $color-uno;
-                    transition: all 0.3s;
 
-                    &:hover {
-                        font-size: 30px;
-                        text-shadow: 2px 2px 5px black
+            &__lista {
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    i {
+                        font-size: 1.8rem;
+                        color: $color-uno;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            font-size: 30px;
+                            text-shadow: 2px 2px 5px black
+                        }
                     }
                 }
             }
         }
-    }
-    /* FORMULARIO | CONSULTAS */
- //FORMULARIO
-    .formulario {
-        box-shadow: 4px 4px 4px black;
-        font-size: 1.4rem;
-        text-align: center;
-        width: 80%;
-        background-color: $color-uno;
-        padding: 10px;
-        border-radius: 15px;
-        @media(min-width: 900px) {
-            width: 45%;
-         }
 
-        &__titulo {
+        /* FORMULARIO | CONSULTAS */
+        //FORMULARIO
+        .formulario {
+            box-shadow: 4px 4px 4px black;
+            font-size: 1.4rem;
             text-align: center;
-            font-family: 'Bebas Neue', cursive;
-        }
-
-        .fila {
-            display: flex;
-            flex-flow: column nowrap;
-            margin-top: 10px;
-
-            label {
-                font-family: 'Roboto Slab', serif;
-            }
-        }
-
-        &__boton {
-            text-align: center;
+            width: 80%;
+            background-color: $color-uno;
             padding: 10px;
+            border-radius: 15px;
 
-            input {
-                background-color: $color-uno;
-                border: 2px solid black;
-                color: black;
-                font-family: 'Roboto Slab', serif;
+            @media(min-width: 900px) {
+                width: 45%;
+            }
 
-                &:hover {
-                    background-color: black;
-                    color: $color-uno;
-                    border: 2px solid $color-uno;
+            &__titulo {
+                text-align: center;
+                font-family: 'Bebas Neue', cursive;
+            }
 
+            .fila {
+                display: flex;
+                flex-flow: column nowrap;
+                margin-top: 10px;
+
+                label {
+                    font-family: 'Roboto Slab', serif;
+                }
+            }
+
+            &__boton {
+                text-align: center;
+                padding: 10px;
+
+                input {
+                    background-color: $color-uno;
+                    border: 2px solid black;
+                    color: black;
+                    font-family: 'Roboto Slab', serif;
+
+                    &:hover {
+                        background-color: black;
+                        color: $color-uno;
+                        border: 2px solid $color-uno;
+
+                    }
+                }
+
+            }
+
+            div {
+                input {
+                    box-shadow: 4px 4px 4px black;
+                    border-radius: 8px;
+                }
+
+                textarea {
+                    box-shadow: 4px 4px 4px black;
+                    border-radius: 8px;
                 }
             }
 
         }
 
-        div {
-            input {
-                box-shadow: 4px 4px 4px black;
-                border-radius: 8px;
-            }
-
-            textarea {
-                box-shadow: 4px 4px 4px black;
-                border-radius: 8px;
-            }
-        }
 
     }
+
+    .celular {
+        text-align: center;
+
+        .neon {
+            display: inline-block;
+            margin: 10px;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            bottom: 30px;
+            right: 30px;
+            color: $color-uno;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 1px 10px $color-uno;
+        }
+
+        .neon:hover {
+            text-decoration: none;
+            color: white;
+            background: $color-uno;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+
+            span {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
 }
+
 /* FIN DE CONSULTAS  */
