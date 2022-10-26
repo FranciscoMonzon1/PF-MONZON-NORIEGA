@@ -1,3 +1,45 @@
+.contenedorgeneral, .contenedor__servicios, .contenedor__ubicacion, .Contenedor__tarjeta {
+  background: url(../imagenes/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.contenedorgeneral .celular .neon, .contenedor__ubicacion .horarios .neon {
+  display: inline-block;
+  margin: 10px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  color: #974063;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px #974063;
+}
+.contenedorgeneral .celular .neon:hover, .contenedor__ubicacion .horarios .neon:hover {
+  text-decoration: none;
+  color: white;
+  background: #974063;
+}
+
+.contenedor__servicios .servicios, .Contenedor__tarjeta .Tarjeta {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.377);
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 4px 4px 4px black;
+}
+
 /* RESETEO */
 * {
   margin: 0px;
@@ -99,6 +141,18 @@ footer div div a i:hover {
   background: #fff;
 }
 
+.contenedorgeneral .contenedor__consultas .formulario__boton input, .Contenedor__tarjeta .Tarjeta .Tarjeta__boton, .fila__inicio .texto__inicio a, .banner .titulo__banner a {
+  background-color: #974063;
+  border: 2px solid black;
+  color: black;
+  font-family: "Roboto Slab", serif;
+}
+.contenedorgeneral .contenedor__consultas .formulario__boton input:hover, .Contenedor__tarjeta .Tarjeta .Tarjeta__boton:hover, .fila__inicio .texto__inicio a:hover, .banner .titulo__banner a:hover {
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
+}
+
 /* PAGINA DE INICIO */
 .banner {
   background: linear-gradient(to bottom, #974063, #ff9677);
@@ -121,7 +175,7 @@ footer div div a i:hover {
   text-align: center;
   margin-top: 90px;
 }
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .banner .titulo__banner {
     margin-top: 0;
     transform: translate(0px, 155px);
@@ -148,18 +202,6 @@ footer div div a i:hover {
     padding-bottom: 10px;
   }
 }
-.banner .titulo__banner a {
-  background-color: #974063;
-  border: 2px solid black;
-  color: black;
-  font-family: "Roboto Slab", serif;
-}
-.banner .titulo__banner a:hover {
-  background-color: black;
-  color: #974063;
-  border: 2px solid #974063;
-}
-
 /* CONTENIDO DE INICIO */
 .fila__inicio {
   gap: 10px;
@@ -198,26 +240,16 @@ footer div div a i:hover {
   font-family: "Bebas Neue", cursive;
   font-size: 2.8rem;
 }
-.fila__inicio .texto__inicio a {
+.fila__inicio .texto__inicio .btndos {
   background-color: #974063;
   border: 2px solid black;
   color: black;
   font-family: "Roboto Slab", serif;
 }
-.fila__inicio .texto__inicio a:hover {
-  background-color: black;
-  color: #974063;
-  border: 2px solid #974063;
-}
-.fila__inicio .texto__inicio .btndos {
-  background-color: black;
-  color: #974063;
-  border: 2px solid #974063;
-}
 .fila__inicio .texto__inicio .btndos:hover {
-  background-color: #974063;
-  color: black;
-  border: 2px solid black;
+  background-color: black;
+  color: #974063;
+  border: 2px solid #974063;
 }
 
 /* FIN PAGINA DE INICIO */
@@ -231,18 +263,8 @@ footer div div a i:hover {
   font-family: "Bebas Neue", cursive;
 }
 
-/* CONTENIDO TIENDA */
 .Contenedor__tarjeta {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: url(../imagenes/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  gap: 15px;
   /* TARJETAS TIENDA */
 }
 @media (min-width: 768px) {
@@ -277,17 +299,6 @@ footer div div a i:hover {
 .Contenedor__tarjeta .Tarjeta__dif {
   grid-area: dif;
 }
-.Contenedor__tarjeta .Tarjeta {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 20px;
-  background-color: rgba(128, 128, 128, 0.377);
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 4px 4px 4px black;
-}
 .Contenedor__tarjeta .Tarjeta .Tarjeta__titulo {
   height: 40vh;
   width: 100%;
@@ -315,51 +326,14 @@ footer div div a i:hover {
     height: auto;
   }
 }
-.Contenedor__tarjeta .Tarjeta .Tarjeta__boton {
-  background-color: #974063;
-  border: 2px solid black;
-  color: black;
-  font-family: "Roboto Slab", serif;
-}
-.Contenedor__tarjeta .Tarjeta .Tarjeta__boton:hover {
-  background-color: black;
-  color: #974063;
-  border: 2px solid #974063;
-}
-
 /* FIN PAGINA TEINDA */
 /* PAGINA DE UBICACION */
 .contenedor__ubicacion {
-  display: flex;
-  flex-flow: column nowrap;
-  background: url(../imagenes/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   /* HORARIOS */
   /* UBICACION */
 }
 .contenedor__ubicacion .horarios {
   text-align: center;
-}
-.contenedor__ubicacion .horarios .neon {
-  display: inline-block;
-  margin: 10px;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  right: 30px;
-  color: #974063;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 0px 1px 10px #974063;
-}
-.contenedor__ubicacion .horarios .neon:hover {
-  text-decoration: none;
-  color: white;
-  background: #974063;
 }
 .contenedor__ubicacion .horarios h2 {
   font-family: "Bebas Neue", cursive;
@@ -372,8 +346,9 @@ footer div div a i:hover {
   }
 }
 .contenedor__ubicacion .horarios ul span {
-  font-size: 20px;
-  font-family: "Roboto Slab", serif;
+  font-size: 23px;
+  font-family: "Lobster", cursive;
+  margin: 8px;
 }
 .contenedor__ubicacion .horarios ul li {
   list-style: circle;
@@ -403,13 +378,6 @@ footer div div a i:hover {
 /* FIN PAGINA DE UBICACION */
 /* PAGINA DE SERVICIOS */
 .contenedor__servicios {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  background: url(../imagenes/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   gap: 10PX;
 }
 @media (min-width: 1200px) {
@@ -419,17 +387,6 @@ footer div div a i:hover {
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "musc musc fun" "musc musc fun" "ga ga fun" "ga ga yog" "zumb zumb yog" "zumb zumb yog";
   }
-}
-.contenedor__servicios .servicios {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 20px;
-  background-color: rgba(128, 128, 128, 0.377);
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 4px 4px 4px black;
 }
 @media (min-width: 768px) {
   .contenedor__servicios .servicios {
@@ -504,19 +461,7 @@ footer div div a i:hover {
 
 /* FIN PAGINA DE SERVICIOS */
 /* COMIENZO DE CONSULTAS */
-.contenedorgeneral {
-  background: url(../imagenes/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
-}
 .contenedorgeneral .contenedor__consultas {
-  background: url(../imagenes/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-flow: column nowrap;
   color: black;
@@ -585,17 +530,6 @@ footer div div a i:hover {
   text-align: center;
   padding: 10px;
 }
-.contenedorgeneral .contenedor__consultas .formulario__boton input {
-  background-color: #974063;
-  border: 2px solid black;
-  color: black;
-  font-family: "Roboto Slab", serif;
-}
-.contenedorgeneral .contenedor__consultas .formulario__boton input:hover {
-  background-color: black;
-  color: #974063;
-  border: 2px solid #974063;
-}
 .contenedorgeneral .contenedor__consultas .formulario div input {
   box-shadow: 4px 4px 4px black;
   border-radius: 8px;
@@ -607,29 +541,11 @@ footer div div a i:hover {
 .contenedorgeneral .celular {
   text-align: center;
 }
-.contenedorgeneral .celular .neon {
-  display: inline-block;
-  margin: 10px;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  right: 30px;
-  color: #974063;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 0px 1px 10px #974063;
-}
-.contenedorgeneral .celular .neon:hover {
-  text-decoration: none;
-  color: white;
-  background: #974063;
-}
 .contenedorgeneral .celular h3 {
   font-size: 1.2rem;
 }
 .contenedorgeneral .celular h3 span {
+  padding-right: 11px;
   font-size: 1.5rem;
   font-weight: bold;
 }

@@ -1,57 +1,43 @@
 /* PAGINA DE UBICACION */
 //COMIENZO DEL CONTENIDO
 .contenedor__ubicacion {
-    display: flex;
-    flex-flow: column nowrap;
-    background: url(../imagenes/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %contenedorbase;
+
     /* HORARIOS */
-//COMIENZO DE SECCION HORARIOS
-    .horarios{
+    //COMIENZO DE SECCION HORARIOS
+    .horarios {
         text-align: center;
-        .neon{
-            display: inline-block;
-            margin: 10px;
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-            bottom: 30px;
-            right: 30px;
-            color: $color-uno;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0px 1px 10px  $color-uno;
+
+        .neon {
+          @extend %neon;
         }
-        
-        .neon:hover{
-            text-decoration: none;
-            color: white;
-            background: $color-uno;
+
+        h2 {
+            font-family: $titulo ;
         }
-        h2{
-            font-family: 'Bebas Neue', cursive ;
-        }
-        ul{
+
+        ul {
             @media(min-width: 768px) {
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-around;
             }
-            span{
-                font-size: 20px;
-                font-family: 'Roboto Slab', serif ;
+
+            span {
+                font-size: 23px;
+                font-family: $resaltar;
+                margin: 8px;
             }
-            li{
-                list-style:circle;
+
+            li {
+                list-style: circle;
             }
         }
     }
+
     /* UBICACION */
-//COMIENZO DE SECCION DE UBICACION
-    .contenedor_preubicacion{
+    //COMIENZO DE SECCION DE UBICACION
+    .contenedor_preubicacion {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -66,7 +52,7 @@
             text-align: center;
             background-color: $color-uno;
             color: black;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $titulo;
         }
 
         &__mapa {
@@ -76,4 +62,5 @@
         }
     }
 }
+
 /* FIN PAGINA DE UBICACION */

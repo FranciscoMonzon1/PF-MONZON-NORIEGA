@@ -20,3 +20,15 @@
         background: #fff;
     }
 }
+%botton {
+    background-color: $color-uno;
+    border: 2px solid black;
+    color: black;
+    font-family: $boton;
+  
+    &:hover {
+      background-color: black;
+      color: $color-uno;
+      border: 2px solid $color-uno;
+    }
+  }

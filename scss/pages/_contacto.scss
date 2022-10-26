@@ -1,18 +1,9 @@
 /* COMIENZO DE CONSULTAS */
 //COMIENZO DE CONTENIDO
 .contenedorgeneral {
-    background: url(../imagenes/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-flow: column nowrap;
+    @extend %contenedorbase;
 
     .contenedor__consultas {
-        background: url(../imagenes/background.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
         color: black;
@@ -75,7 +66,7 @@
 
             &__titulo {
                 text-align: center;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $titulo;
             }
 
             .fila {
@@ -84,7 +75,7 @@
                 margin-top: 10px;
 
                 label {
-                    font-family: 'Roboto Slab', serif;
+                    font-family: $boton;
                 }
             }
 
@@ -93,17 +84,7 @@
                 padding: 10px;
 
                 input {
-                    background-color: $color-uno;
-                    border: 2px solid black;
-                    color: black;
-                    font-family: 'Roboto Slab', serif;
-
-                    &:hover {
-                        background-color: black;
-                        color: $color-uno;
-                        border: 2px solid $color-uno;
-
-                    }
+                    @extend %botton;
                 }
 
             }
@@ -129,30 +110,16 @@
         text-align: center;
 
         .neon {
-            display: inline-block;
-            margin: 10px;
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-            bottom: 30px;
-            right: 30px;
-            color: $color-uno;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0px 1px 10px $color-uno;
+            @extend %neon;
         }
 
-        .neon:hover {
-            text-decoration: none;
-            color: white;
-            background: $color-uno;
-        }
+        
 
         h3 {
             font-size: 1.2rem;
 
             span {
+                padding-right: 11px;
                 font-size: 1.5rem;
                 font-weight: bold;
             }

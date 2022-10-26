@@ -1,13 +1,8 @@
 /* PAGINA DE SERVICIOS */
 //COMIENZO DE CONTENIDO
 .contenedor__servicios {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    background: url(../imagenes/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %contenedorbase;
+   
     gap: 10PX;
  //GRID
     @media(min-width:1200px) {
@@ -24,15 +19,7 @@
     }
 
     .servicios {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 20px;
-        background-color: $color-tarjeta ;
-        padding: 10px;
-        margin: 10px;
-        box-shadow: 4px 4px 4px black;
+        @extend %tarjeta;
 
         @media(min-width: 768px) {
             flex-flow: row nowrap;
@@ -62,14 +49,14 @@
                 font-size: 2REM;
                 margin-top: 20px;
                 text-align: center;
-                font-family: 'Bebas Neue', cursive; 
+                font-family: $titulo; 
             }
 
             h3 {
                 font-size: 2REM;
                 margin-top: 20px;
                 text-align: center;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $titulo;
             }
 
             ul {

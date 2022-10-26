@@ -6,22 +6,12 @@
     background-color: $color-uno;
     margin: 0;
     color: black;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $titulo;
 }
-/* CONTENIDO TIENDA */
 //COMIENZO DE PAGINA
 .Contenedor__tarjeta {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: url(../imagenes/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    @extend %contenedorbase;
+    gap: 15px;
 
     @media(min-width: 768px) {
         display: flex;
@@ -58,19 +48,12 @@
     .Tarjeta__dif {
         grid-area: dif;
     }
-/* TARJETAS TIENDA */
+
+    /* TARJETAS TIENDA */
     //TARJETAS DE LA TIENDA
     .Tarjeta {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 20px;
-        background-color: $color-tarjeta;
-        padding: 10px;
-        margin: 10px;
-        box-shadow: 4px 4px 4px black;
-
+        @extend %tarjeta;
+        
         .Tarjeta__titulo {
             height: 40vh;
             width: 100%;
@@ -81,7 +64,7 @@
             text-align: center;
             color: white;
             text-shadow: 8px 8px 8px black;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $titulo;
         }
 
         .Tarjeta__titulo--intermedio {
@@ -95,26 +78,16 @@
         .Tarjeta__parrafo {
             height: 60%;
             text-align: center;
-    
+
             @media(min-width:1200px) {
                 height: auto;
             }
         }
 
         .Tarjeta__boton {
-            background-color: $color-uno;
-            border: 2px solid black;
-            color: black;
-            font-family: 'Roboto Slab', serif;
-    
-            &:hover {
-                background-color: black;
-                color: $color-uno;
-                border: 2px solid $color-uno;
-    
-            }
+            @extend %botton;
         }
-    
     }
 }
+
 /* FIN PAGINA TEINDA */
