@@ -320,6 +320,7 @@ footer div div a i:hover {
 .Contenedor__tarjeta .Tarjeta .Tarjeta__parrafo {
   height: 60%;
   text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 @media (min-width: 1200px) {
   .Contenedor__tarjeta .Tarjeta .Tarjeta__parrafo {
